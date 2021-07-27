@@ -1,0 +1,139 @@
+<!doctype html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+
+        <title>CV Virginie Villard, Me contacter</title>
+
+        <meta name="description" content="CV Virginie Villard" />
+        <meta name="author" content="SitePoint" />
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="styles/style.css" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand navbar-dark bg-dark fixed-top">
+
+            <a class="navbar-brand" href="index.html">Virginie Villard</a>
+
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hobbies.html">Hobbies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="video.html">Vidéo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+            <div class="nav-item navbar-right" id="maison">
+                <a  href="contact.html"><img  src="https://img.icons8.com/glyph-neue/64/000000/home.png" id="maison" /></a>
+            </div>
+
+        </nav>
+
+        <div class="headerBanner">
+            <h1>Contactez-moi</h1>
+        </div>
+    </header>
+            <!-- Je crée un formulaire -->
+
+        <form class="formulaire container content" action="/ma-page-de-traitement" method="post" class="content container">
+            <p class="obligatoire">Les champs indiqués par une * sont obligatoires</p>
+            <div>
+                <label for="name">*Nom :</label>
+                <input type="text" id="name" name="user_name" required>
+
+                <label for="name">*Prénom :</label>
+                <input type="text" id="firtName" name="user_name" required>
+            </div>
+            <div>
+                <!-- bouton radio -->
+                    <p>Je suis :</p>
+                    <div>
+                        <input type="radio" name="pro" value="Un professionnel" checked>
+                        <label for="pro">Un professionnel</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="pro" value="Un particulier">
+                        <label for="particulier">Un particulier</label>
+                    </div>
+            </div>
+            <div>
+                <label class="mail" for="mail">*e-mail :</label>
+                <input type="email" id="mail" name="user_mail" required>
+            </div>
+
+            <!-- je crée un bouton select -->
+            <div>
+                <p>Je voudrais :</p>
+                <select name="select" onchange="updated(this)">
+                    <option class="optionForm" value="1">Un devis</option>
+                    <option class="optionForm" value="2">Recevoir plus d'informations sur votre travail</option>
+                    <option class="optionForm" value="3">Recruter un développeur</option>
+                    <option class="optionForm" value="4">Un conseil</option>
+
+                </select>
+            </div>
+
+                <label class="message" for="msg">Message :</label>
+                <textarea id="msg" name="user_message"></textarea>
+            </div>
+
+            <div id="submit">
+                <input type="submit" value="Envoyer le formulaire">
+            </div>
+
+        </form>
+
+        <footer>
+            <div class="container row">
+                <div class="col-11">
+                    <ul class="footerlink">
+                        <li> <a href="index4.html">Me contacter</a></li>
+                        <li> <a href="index.html"> Home</a></li>
+                    </ul>
+                    <div class="linkedin">
+                        <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+                        <script type="IN/Share" data-url="https://www.linkedin.com/in/virginie-villard-3a8883b7/"></script>
+                    </div>
+                </div>
+
+                <div id="photo" class="col-1">
+                    <img class="profil" src="images/profil.jpg"/>
+                </div>
+            </div>
+
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

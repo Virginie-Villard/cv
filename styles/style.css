@@ -1,0 +1,239 @@
+
+@font-face {
+  font-family: quantico;
+  src: url(../fonts/Quantico-Regular.ttf);
+}
+
+body {
+    background-color: #151f33;
+    color: white;
+    font-family: quantico, sans-serif;
+    font-size: 14px;
+}
+
+/**
+ * la formule pour calculer la position du footer
+ * en fonction de la hauteur du viewport
+ */
+.content {
+    min-height: calc(100vh - 300px - 300px);
+}
+
+/*______________________HEADER BANNER______________________*/
+
+.headerBanner {
+    height: 300px;
+    margin-bottom: 50px;
+
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+
+    background-image: url("../images/header-bg.jpg")
+}
+
+.headerBanner h1 {
+    padding-top: 120px;
+    text-align: center;
+    font-size: 5em;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 700px) {
+    .headerBanner {
+        font-size: smaller;
+    }
+}
+
+#maison {
+    height: 2.2em;
+    width: 2.2em;
+
+    position: absolute;
+    right: 2em;
+}
+
+/**
+* Une mediaquery qui permet d'avoir la maison en posistion static
+* (à la suite des autres liens)
+* pour le responsive pour un petit écran
+**/
+@media screen and (max-width: 500px) {
+    #maison {
+        position: static;
+    }
+}
+
+/*______________________TITRES et TEXTES______________________*/
+
+h2 {
+    margin-top: 2em;
+    font-size: 3.5em;
+    font-weight: 700;
+}
+
+h3 {
+    margin-top: 3em;
+    font-size: 2em;
+    font-weight: 700;
+    color : #74B3DB;
+}
+
+h4 {
+    margin-bottom: 1.5em;
+}
+
+
+.list {
+    color: #EFE5C1;
+    list-style-type: none;
+}
+
+.competences {
+    font-size: 1.2em;
+}
+
+.lien {
+    padding-left: 3em;
+}
+
+/*______________________TABLEAU______________________*/
+
+/**
+* change the color of a bootstrap table,
+* Inspired by :
+*https://stackoverflow.com/questions/66214470/how-to-change-background-color-of-table-cell-while-using-bootstraps-css-classes
+*/
+
+table {
+    font-size: 1.2em;
+    background-color: #151f33 !important;
+    color:#EFE5C1 !important;
+}
+
+td {
+    padding: 0.6em 1.2em;
+    text-align: start;
+}
+
+.legendeTable {
+    padding-top: 3em;
+}
+
+/*______________________HOBBIES______________________*/
+
+.hobbies h2{
+    margin: 3em 0;
+    font-size: 2em;
+    font-weight: 700;
+    color: #EFE5C1;
+}
+
+#hok {
+    margin-top: 3em;
+}
+
+.hobbies p {
+    margin-top: 3em;
+}
+
+/*______________________VIDEO______________________*/
+
+/**
+ * Inspired by CSS Tricks
+ * Astuce pour respecter le ratio 16:9 responsive
+ * @see https://css-tricks.com/fluid-width-video/
+ */
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-style: hidden;
+}
+
+
+/*______________________FORMULAIRE______________________*/
+
+.formulaire {
+    border: solid 3px black;
+    padding: 2em;
+
+    width: 40em;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.obligatoire {
+    color: #8CD3FF;
+    padding-bottom: 2em;
+}
+
+form p, .mail, #submit {
+    padding-top: 2em;
+}
+
+.message {
+    padding-top: 4em;
+}
+
+input, .optionForm, #msg {
+    background-color: #EFE5C1;
+}
+
+/*________________________________________________________________________________________________
+FOOTER
+_______________________________________________________________________________________________*/
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+
+    background-image: url("../images/header-bg.jpg");
+
+    padding-top: 6em;
+
+    width:100%;
+    padding-left:20%;
+}
+
+
+/*______________________LINKS______________________*/
+
+footer .footerlink {
+    list-style-type: none;
+}
+
+footer .footerlink a {
+    color: white;
+    font-size: 1.2em;
+}
+
+.linkedin {
+    padding-left: 2.9em;
+}
+
+footer li {
+    padding: 1.2em 0;
+}
+
+/*______________________PHOTO_PROFIL______________________*/
+
+.profil {
+    width: 6em;
+    border-radius: 50%;
+}
+
+
+
+
